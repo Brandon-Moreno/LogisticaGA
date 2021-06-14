@@ -1,0 +1,171 @@
+*{
+  border:0px;
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+body{
+background:#000000;
+}
+/*Computadoras de escritorio*/
+@media only screen and (min-width:1361px){
+.navigation{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-auto-rows: 2;
+ }
+
+.navigation, .navigation a{
+text-decoration:none;
+color:white;
+}
+.active{
+border-bottom: 3px solid #ffffff;
+}
+.navigation a:hover{
+border-bottom: 3px solid #ffffff;
+}
+.logo{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:10px;
+}
+.iz{
+display:grid;
+grid-template-columns: repeat(4,1fr);
+font-size:2em;
+padding:10px;
+}
+.contact{
+display:flex;
+justify-content:center;
+}
+.clients{
+display:flex;
+justify-content:center;
+}
+.whoWeAre{
+display:flex;
+justify-content:center;
+}
+.service{
+display:flex;
+justify-content:center;
+}
+
+.container{
+width:60%;
+margin:auto;
+color:#ffffff;
+}
+.content h2{
+font-size:2.5em;
+}
+.content p{
+font-size:2em;
+}
+ul li{
+list-style:none;
+}
+.listService ul{
+text-align:center;
+}
+.listService .quote{
+  font-size:20px;
+}
+footer{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-auto-rows:minmax(100px,auto);
+font-size:1.8em;
+color:#ffffff;
+}
+footer a{
+text-decoration:none;
+color:#ffffff;
+}
+.we{
+text-align:center;
+}
+.pNt{
+display:grid;
+grid-template-columns:repeat(1,1fr);
+}
+.politics{
+display:grid;
+justify-content:center;
+align-items:center;
+}
+.terms{
+display:grid;
+justify-content:center;
+}
+.socials{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+grid-auto-columns: 4;
+}
+.face a:hover{
+color: #4267B2;
+}
+.face{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:15px;
+}
+.ins a:hover{
+background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #FFDC80;
+}
+.ins{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:15px;
+}
+.link a:hover{
+color:#2867B2;
+}
+.link{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:15px;
+margin-bottom:15px;
+}
+
+.youtube a:hover{
+color:#FF0000;
+}
+.youtube{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:15px;
+}
+.wpp{
+  position:fixed;
+  bottom:30px;
+  right:40px;
+
+}
+.fa-whatsapp{
+  color: #4AC959;
+  font-size:2em;
+}
+}
+/*Laptops*/
+@media only screen and (max-width:1360px){
+
+}
+
+/*smartPhones*/
+@media only screen and (max-width:850px){
+.navigation{
+display:none;
+}
+}
