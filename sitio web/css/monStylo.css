@@ -166,6 +166,49 @@ margin-bottom:15px;
 /*smartPhones*/
 @media only screen and (max-width:850px){
 .navigation{
+display:grid;
+grid-template-columns: repeat(1,1fr);
+grid-auto-rows: 2;
+}
+.navigation a{
+color: #ffffff;
+}
+.logo img{
+width:100%;
+padding:10px;
+}
+.iz{
+display:grid;
+grid-template-columns: repeat(4,1fr);
+font-size:1.4em;
+}
+.service{
+display:flex;
+justify-content:center;
+}
+.contact{
+display:flex;
+justify-content:center;
+}
+.clients{
+display:flex;
+justify-content:center;
+}
+.whoWeAre{
+display:flex;
+justify-content:center;
+}
+.navigation span{
 display:none;
+}
+.active{
+border-bottom: 3px solid #FF0000;
+}
+hr{
+border: 1px solid #4AC959;
+}
+
+footer{
+
 }
 }
