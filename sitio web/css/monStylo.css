@@ -227,7 +227,48 @@ hr{
 border: 1px solid #4AC959;
 }
 
-footer{
 
+.we{
+display: none;
+}
+.pNt{
+display:none;
+}
+.socials{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+grid-auto-rows: 1;
+font-size:2em;
+}
+.face,
+.ins,
+.link,
+.youtube{
+display:flex;
+justify-content:center;
+color:#4AC959;
+}
+.wpp{
+position:fixed;
+bottom:30px;
+right:30px;
+}
+.fa-facebook{
+color:#4267B2;
+}
+.fa-instagram{
+background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #FFDC80;
+}
+.fa-linkedin{
+color:#2867B2;
+}
+.fa-youtube{
+color:#FF0000;
+}
+.fa-whatsapp{
+color:#4AC959;
 }
 }
