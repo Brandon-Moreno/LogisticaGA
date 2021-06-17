@@ -252,6 +252,27 @@ hr{
 border: 1px solid #4AC959;
 }
 
+@keyframes prsnttn{
+  25%{
+    background-image:url("../img/road2.jpg");
+  }
+  50%{
+    background-image: url("../img/rowtrailers.jpg");
+  }
+  75%{
+    background-image: url("../img/road.jpg");
+  }
+  100%{
+    background-image: url("../img/trailers.jpg");
+  }
+}
+.prsnttn{
+  width:100%;
+  height:1000px;
+  background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
+  animation:prsnttn 30s 4;
+}
+
 footer{
   height:200px;
 }
