@@ -65,7 +65,7 @@ hr{
 }
 .prsnttn{
   width:100%;
-  height:1000px;
+  height:900px;
   background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
   animation:prsnttn 30s 4;
 }
