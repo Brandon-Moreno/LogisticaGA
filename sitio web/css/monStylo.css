@@ -9,8 +9,8 @@
   src:url("../fuentes/Times New Normal Regular.ttf");
 }
 body{
-background: #000000;/*url("../img/fondo.png");/*
-/*background-repeat: no-repeat;
+background: #000000;/*url("../img/fondo.png");
+background-repeat: no-repeat;
 background-size: cover;*/
 color:#ffffff;
 font-family: "Times New Normal Regular";
@@ -90,7 +90,7 @@ justify-content:center;
 width:75%;
 margin:auto;
 color:#ffffff;
-background-color: rgba(250,250,250,.1);
+background-color: #848F86;
 padding:50px 50px;
 margin-bottom:50px;
 margin-top:50px;
