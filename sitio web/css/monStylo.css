@@ -4,12 +4,22 @@
   padding:0px;
   box-sizing: border-box;
 }
-body{
-background:#000000;
-color:#ffffff;
+@font-face{
+  font-family:"Times New Normal Regular";
+  src:url("../fuentes/Times New Normal Regular.ttf");
 }
+
 /*Computadoras de escritorio*/
 @media only screen and (min-width:1361px){
+
+body{
+background-image: url("../img/fondo.png");
+background-repeat: no-repeat;
+background-size: cover;
+color:#ffffff;
+font-family: "Times New Normal Regular";
+}
+
 .navigation{
 display: grid;
 grid-template-columns: repeat(1,1fr);
@@ -35,13 +45,33 @@ padding:10px;
 .iz{
 display:grid;
 grid-template-columns: repeat(4,1fr);
-font-size:1.5em;
+font-size:20px;
 padding:10px;
 }
 hr{
   border:1px solid #ffffff;
 }
 
+@keyframes prsnttn{
+  25%{
+    background-image:url("../img/road2.jpg");
+  }
+  50%{
+    background-image: url("../img/rowtrailers.jpg");
+  }
+  75%{
+    background-image: url("../img/road.jpg");
+  }
+  100%{
+    background-image: url("../img/trailers.jpg");
+  }
+}
+.prsnttn{
+  width:100%;
+  height:1000px;
+  background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
+  animation:prsnttn 30s 4;
+}
 .contact{
 display:flex;
 justify-content:center;
@@ -71,11 +101,9 @@ margin-top:50px;
 .container i{
   color: #4AC959;
 }
-.content h2{
-font-size:2em;
-}
+
 .content p{
-font-size:1.5em;
+font-size:16px;
 }
 
 ul li{
@@ -85,7 +113,7 @@ list-style:none;
 text-align:center;
 }
 .listService .quote{
-  font-size:20px;
+  font-size:17px;
 }
 footer{
 display:grid;
@@ -122,7 +150,7 @@ justify-content:center;
 display:grid;
 grid-template-columns:repeat(5,1fr);
 grid-auto-columns: 4;
-font-size:1.5em;
+font-size:2em;
 }
 .face a:hover{
 color: #4267B2;
@@ -184,6 +212,13 @@ margin-bottom:15px;
 
 /*smartPhones*/
 @media only screen and (max-width:850px){
+
+body{
+background: url("../img/fondo.png") no-repeat center center/cover;
+color:#ffffff;
+font-family: "Times New Normal Regular";
+}
+
 .navigation{
 display:grid;
 grid-template-columns: repeat(1,1fr);
@@ -224,15 +259,87 @@ display:none;
 border-bottom: 3px solid #FF0000;
 }
 hr{
-border: 1px solid #4AC959;
+border: 1px solid #ffffff;
 }
 
+@keyframes prsnttn{
+  25%{
+    background-image:url("../img/road2.jpg");
+  }
+  50%{
+    background-image: url("../img/rowtrailers.jpg");
+  }
+  75%{
+    background-image: url("../img/road.jpg");
+  }
+  100%{
+    background-image: url("../img/trailers.jpg");
+  }
+}
+.prsnttn{
+  width:100%;
+  height:900px;
+  background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
+  animation:prsnttn 30s 6;
+}
 
+.container{
+padding:10px;
+background:#EAEDED;
+color:#000000;
+}
+.container h3{
+text-align:center;
+}
+.container p{
+text-align:justify;
+}
+
+.container img{
+width:100%;
+}
+
+.container a{
+text-decoration:none;
+font-size:20px;
+color: #000000;
+}
+
+.putOn{
+width:30%;
+position:relative;
+bottom:130px;
+left:250px;
+}
+
+.container hr{
+width:95%;
+margin:auto;
+border: 1px solid #ffffff;
+}
+
+.listService li{
+list-style-type:none;
+}
+
+footer{
+  height:auto;
+  display:grid;
+  grid-template-columns:repeat(1,1fr);
+  grid-uto-rows:3;
+  text-align:center;
+  grid-gap:20px;
+}
+footer a{
+color:#ffffff;
+text-decoration:none;
+}
 .we{
-display: none;
+grid-row:3;
+
 }
 .pNt{
-display:none;
+grid-row:2;
 }
 .socials{
 display:grid;
@@ -246,7 +353,7 @@ font-size:2em;
 .youtube{
 display:flex;
 justify-content:center;
-color:#4AC959;
+align-items:center;
 }
 .wpp{
 position:fixed;
