@@ -10,7 +10,7 @@
 }
 
 /*Computadoras de escritorio*/
-@media only screen and (min-width:1361px){
+@media only screen and (min-width:1367px){
 
 body{
 background-image: url("../img/fondo.png");
@@ -206,8 +206,260 @@ margin-bottom:15px;
 }
 }
 /*Laptops*/
-@media only screen and (max-width:1360px){
+@media only screen and (max-width:1366px){
+  body{
+  background: url("../img/fondo2.png") no-repeat center center/cover;
+  color:#ffffff;
+  font-family: "Times New Normal Regular";
+  }
 
+  .navigation{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-auto-rows: 2;
+   }
+
+  .navigation, .navigation a{
+  text-decoration:none;
+  color:white;
+  }
+  .active{
+  border-bottom: 3px solid #4267B2;
+  }
+  .navigation a:hover{
+  border-bottom: 3px solid #2867B2;
+  }
+  .logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+  }
+  .iz{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  font-size:20px;
+  padding:10px;
+  }
+  hr{
+    border:1px solid #ffffff;
+  }
+
+  @keyframes prsnttn{
+    25%{
+      background-image:url("../img/road2.jpg");
+    }
+    50%{
+      background-image: url("../img/rowtrailers.jpg");
+    }
+    75%{
+      background-image: url("../img/road.jpg");
+    }
+    100%{
+      background-image: url("../img/trailers.jpg");
+    }
+  }
+  .prsnttn{
+    width:100%;
+    height:1000px;
+    background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
+    animation:prsnttn 30s 4;
+  }
+  .contact{
+  display:flex;
+  justify-content:center;
+  }
+  .clients{
+  display:flex;
+  justify-content:center;
+  }
+  .whoWeAre{
+  display:flex;
+  justify-content:center;
+  }
+  .service{
+  display:flex;
+  justify-content:center;
+  }
+
+  .container{
+  width:75%;
+  margin:auto;
+  color:#ffffff;
+  background-color: rgba(250,250,250,.1);
+  padding:50px 50px;
+  margin-bottom:50px;
+  margin-top:50px;
+  }
+  .content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows:8;
+    grid-gap:20px;
+  }
+  .container i{
+    color: #4AC959;
+  }
+
+  .content p{
+  font-size:20px;
+  }
+  .container h3{
+    text-align: center;
+  }
+  .container img{
+    width:100%;
+  }
+  .putOn{
+    width:50px;
+    position: relative;
+    bottom:150px;
+    left:255px;
+  }
+  .putOn a{
+    text-decoration: none;
+    color: #000000;
+    font-size:30px;
+  }
+  .road{
+    position:relative;
+    bottom:140px;
+    text-align: center;
+  }
+  .road a{
+    text-decoration: none;
+    color: #000000;
+    font-size:36px;
+  }
+  ul li{
+  list-style:none;
+  font-size: 20px;
+  }
+  ul p{
+    font-size: 20px;
+  }
+  .listService ul{
+  text-align:center;
+  }
+  .listService .quote{
+    font-size:18px;
+  }
+  .lgstTeam{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-auto-rows:3;
+  }
+  .nnc{
+    text-align:center;
+  }
+  .nnc img{
+    width:180px;
+    height:180px;
+    border-radius:100px;
+  }
+  .nnc a, .jspht a{
+    text-decoration: none;
+    color:#ffffff;
+  }
+  .jspht{
+    text-align: center;
+  }
+  .jspht img{
+    width:180px;
+    height:180px;
+    border-radius:100px;
+  }
+  footer{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows:minmax(100px,auto);
+  font-size:1em;
+  color:#ffffff;
+  height:200px;
+  }
+  footer a{
+  text-decoration:none;
+  color:#ffffff;
+  }
+  .we{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  }
+  .pNt{
+  display:grid;
+  grid-template-columns:repeat(1,1fr);
+  font-size: 14px;
+  }
+  .politics{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  }
+  .terms{
+  display:flex;
+  justify-content:center;
+  }
+  .socials{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  grid-auto-columns: 4;
+  font-size:2em;
+  }
+  .face a:hover{
+  color: #4267B2;
+  }
+  .face{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+  }
+  .ins a:hover{
+  background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFDC80;
+  }
+  .ins{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+  }
+  .link a:hover{
+  color:#2867B2;
+  }
+  .link{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+  }
+
+  .youtube a:hover{
+  color:#FF0000;
+  }
+  .youtube{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+  }
+  .wpp{
+    position:fixed;
+    bottom:30px;
+    right:40px;
+  }
+  .fa-whatsapp{
+    color: #455A64;
+    font-size:2em;
+  }
+  .fa-whatsapp:hover{
+    color:#4AC959;
+  }
 }
 
 /*smartPhones*/
@@ -285,8 +537,11 @@ border: 1px solid #ffffff;
 
 .container{
 padding:10px;
+width:100%;
 background:#EAEDED;
 color:#000000;
+display:grid;
+grid-template-columns: repeat(1,1fr);
 }
 .container h3{
 text-align:center;
@@ -306,16 +561,10 @@ color: #000000;
 }
 
 .putOn{
-width:30%;
+width:50px;
 position:relative;
-bottom:130px;
-left:250px;
-}
-
-.container hr{
-width:95%;
-margin:auto;
-border: 1px solid #ffffff;
+bottom:140px;
+left:285px;
 }
 
 .listService li{
@@ -377,5 +626,6 @@ color:#FF0000;
 }
 .fa-whatsapp{
 color:#4AC959;
+font-size:40px;
 }
 }
