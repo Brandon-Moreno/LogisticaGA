@@ -281,7 +281,7 @@ margin-bottom:15px;
 /*Laptops*/
 @media only screen and (max-width:1366px){
   body{
-  background: url("../img/fondo2.png") no-repeat center center/cover;
+  background: #000000;/*url("../img/fondo2.png") no-repeat center center/cover;*/
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -386,8 +386,8 @@ margin-bottom:15px;
   .putOn{
     width:50px;
     position: relative;
-    bottom:150px;
-    left:255px;
+    bottom:50px;
+    left:300px;
   }
   .putOn a{
     text-decoration: none;
