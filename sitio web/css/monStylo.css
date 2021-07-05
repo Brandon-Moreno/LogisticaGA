@@ -95,10 +95,8 @@ justify-content:center;
   padding:50px 50px;
   margin-bottom:50px;
   margin-top:50px;
-  }
-  .content{
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-auto-rows:8;
     grid-gap:20px;
   }
@@ -156,26 +154,19 @@ text-align:center;
     grid-template-columns:repeat(2,1fr);
     grid-auto-rows:3;
   }
-  .nnc{
+  .nnc,.jspht,.mrln,.dnl{
     text-align:center;
   }
-  .nnc img{
+  .nnc img, .jspht img, .mrln img, .dnl img{
     width:180px;
     height:180px;
     border-radius:100px;
   }
-  .nnc a, .jspht a{
+  .nnc a, .jspht a,.mrln a, .dnl a{
     text-decoration: none;
     color:#ffffff;
   }
-  .jspht{
-    text-align: center;
-  }
-  .jspht img{
-    width:180px;
-    height:180px;
-    border-radius:100px;
-  }
+ 
 
 footer{
 display:grid;
