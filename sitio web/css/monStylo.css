@@ -216,7 +216,6 @@ font-size:2em;
 }
 .title{
 grid-column:1/6;
-display:grid;
 align-items:center;
 font-size:16px;
 text-align:center;
@@ -279,9 +278,9 @@ margin-bottom:15px;
 }
 }
 /*Laptops*/
-@media only screen and (max-width:1366px){
+@media only screen and (min-width:851px) and (max-width:1366px){
   body{
-  background: #000000;/*url("../img/fondo2.png") no-repeat center center/cover;*/
+  background: url("../img/fondo.png") no-repeat center center/cover;
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -310,7 +309,7 @@ margin-bottom:15px;
   }
   .iz{
   display:grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
   font-size:20px;
   padding:10px;
   }
@@ -346,6 +345,10 @@ margin-bottom:15px;
   display:flex;
   justify-content:center;
   }
+  .galery{
+  display:flex;
+  justify-content:center; 
+  }
   .whoWeAre{
   display:flex;
   justify-content:center;
@@ -354,6 +357,8 @@ margin-bottom:15px;
   display:flex;
   justify-content:center;
   }
+  
+  /*----content-----*/
 
   .container{
   width:75%;
@@ -370,6 +375,7 @@ margin-bottom:15px;
     grid-auto-rows:8;
     grid-gap:20px;
   }
+  
   .container i{
     color: #4AC959;
   }
@@ -383,11 +389,14 @@ margin-bottom:15px;
   .container img{
     width:100%;
   }
+  .mobile{
+  display: none;
+  }
   .putOn{
     width:50px;
     position: relative;
-    bottom:50px;
-    left:300px;
+    bottom:150px;
+    left:255px;
   }
   .putOn a{
     text-decoration: none;
@@ -414,6 +423,7 @@ margin-bottom:15px;
   .listService ul{
   text-align:center;
   }
+  
   .listService .quote{
     font-size:18px;
   }
@@ -438,6 +448,7 @@ margin-bottom:15px;
     text-align: center;
   }
 
+/*-----footer lap-----*/
   footer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -479,7 +490,8 @@ margin-bottom:15px;
   }
 .title{
 grid-column:1/6;
-display:grid;
+display:flex;
+justify-content:center;
 align-items:center;
 font-size:16px;
 text-align:center;
@@ -562,7 +574,7 @@ padding:10px;
 }
 .iz{
 display:grid;
-grid-template-columns: repeat(4,1fr);
+grid-template-columns: repeat(5,1fr);
 font-size:1.4em;
 }
 .service{
@@ -570,6 +582,10 @@ display:flex;
 justify-content:center;
 }
 .contact{
+display:flex;
+justify-content:center;
+}
+.galery{
 display:flex;
 justify-content:center;
 }
@@ -612,25 +628,19 @@ border: 1px solid #ffffff;
   animation:prsnttn 30s 6;
 }
 
+
+/*content*/
 .container{
 padding:10px;
 width:100%;
 margin:3px 0px 3px 0px;
 background:#EAEDED;
 color:#000000;
-
-}
-.content{
-  display:grid;
-  grid-template-columns: repeat(1,1fr);
-}
-.container h3{
+display:grid;
+grid-template-columns: repeat(1,1fr);
+grid-gap:40px;
 text-align:center;
 }
-.container p{
-text-align:justify;
-}
-
 .container img{
 width:100%;
 border-radius:10px;
@@ -641,7 +651,6 @@ text-decoration:none;
 font-size:20px;
 color: #000000;
 }
-
 .putOn{
 width:50px;
 position:relative;
@@ -651,10 +660,15 @@ left:285px;
 .road{
   width:150px;
   position:relative;
-  left:180px;
+  left:250px;
+  bottom:30px;
 }
 .listService li{
 list-style-type:none;
+}
+.listService{
+grid-template-column:repeat(2,1fr);
+grid-auto-row:5;
 }
 .lgstTeam{
   margin-top:50px;
@@ -662,10 +676,43 @@ list-style-type:none;
   grid-template-columns: repeat(1,1fr);
   grid-gap:20px;
 }
+.nnc,.jspht{
+text-align:center;
+}
+
+.desk{
+  display:none;
+  }
+  .content i{
+  text-align:center;
+  }
+  .mobile{
+  font-size:90px;
+  }
+
 .lgstTeam img{
 width:50%;
 border-radius:150px;
 }
+
+.db{
+text-align:center
+}
+
+input{
+background-color:rgba(250,250, 250, .1);
+border-bottom:1px solid #000000;
+color:#000000;
+text-align:center;
+width:300px;
+}
+input:focus{
+border-bottom:1px solid #4AC959;
+background-color: rgba(250, 250, 250,.1);
+outline:none;
+}
+
+/*footer smartphone*/
 footer{
   height:auto;
   display:grid;
@@ -688,16 +735,26 @@ grid-row:2;
 .socials{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-grid-auto-rows: 1;
+grid-auto-rows: 2;
+grid-gap: 20px;
 font-size:2em;
 }
 .face,
 .ins,
 .link,
 .youtube{
+grid-row:2;
 display:flex;
 justify-content:center;
 align-items:center;
+}
+.title{
+grid-column:1/5;
+font-size:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:10px;
 }
 .wpp{
 position:fixed;
