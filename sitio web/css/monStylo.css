@@ -166,7 +166,15 @@ text-align:center;
     text-decoration: none;
     color:#ffffff;
   }
- 
+  .send{
+    background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFDC80;
+    width:100px;
+    border-radius:15px;
+  }
+
 
 footer{
 display:grid;
@@ -338,7 +346,7 @@ margin-bottom:15px;
   }
   .galery{
   display:flex;
-  justify-content:center; 
+  justify-content:center;
   }
   .whoWeAre{
   display:flex;
@@ -348,7 +356,7 @@ margin-bottom:15px;
   display:flex;
   justify-content:center;
   }
-  
+
   /*----content-----*/
 
   .container{
@@ -366,11 +374,23 @@ margin-bottom:15px;
     grid-auto-rows:8;
     grid-gap:20px;
   }
-  
+
   .container i{
     color: #4AC959;
   }
-
+  .containerContact{
+    width:75%;
+    margin:auto;
+    color:#ffffff;
+    background-color: rgba(250,250,250,.1);
+    padding:50px 50px;
+    margin-bottom:50px;
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:50px;
+    text-align: center;
+  }
   .content p{
   font-size:20px;
   }
@@ -414,7 +434,7 @@ margin-bottom:15px;
   .listService ul{
   text-align:center;
   }
-  
+
   .listService .quote{
     font-size:18px;
   }
@@ -428,16 +448,50 @@ margin-bottom:15px;
     height:180px;
     border-radius:100px;
   }
-  .nnc{
+  .nnc,.jspht,.mrln,.dnl{
     text-align:center;
   }
-  .nnc a, .jspht a{
+  .nnc a, .jspht a, .mrln a, .dnl a{
     text-decoration: none;
     color:#ffffff;
   }
-  .jspht{
-    text-align: center;
+label{
+  font-size: 20px;
+}
+  input{
+    background-color: rgba(250,250,250,.1);
+    border-bottom:1px solid #000000;
+    border-radius:50px;
+    color:#000000;
+    text-align:center;
+    width:300px;
   }
+  input:focus{
+  border-bottom:1px solid #4AC959;
+  background-color: rgba(0,0,0,.1);
+  outline:none;
+  }
+  .send{
+    background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFDC80;
+    width:100px;
+    border-radius:15px;
+    font-size: 20px;
+    width:150px;
+  }
+  .cancel{
+    background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFDC80;
+    width:100px;
+    border-radius:15px;
+    font-size: 20px;
+    width:150px;
+  }
+
 
 /*-----footer lap-----*/
   footer{
@@ -621,7 +675,7 @@ border: 1px solid #ffffff;
 
 
 /*content*/
-.container{
+.content{
 padding:10px;
 width:100%;
 margin:3px 0px 3px 0px;
@@ -639,20 +693,38 @@ border-radius:10px;
 
 .container a{
 text-decoration:none;
-font-size:20px;
-color: #000000;
+font-size:30px;
+color: #ffffff;
+}
+.containerContact{
+  padding:10px;
+  width:100%;
+  margin:3px 0px 3px 0px;
+  background:#EAEDED;
+  color:#000000;
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap:100px;
+  text-align:center;
+
+}
+.containerContact a{
+text-decoration: none;
+color:#000000;
+}
+.containerContact img{
+
 }
 .putOn{
-width:50px;
+width:150px;
 position:relative;
-bottom:140px;
-left:285px;
+bottom:70px;
+left:300px;
 }
 .road{
-  width:150px;
+  width:200px;
   position:relative;
-  left:250px;
-  bottom:30px;
+  bottom:230px;
 }
 .listService li{
 list-style-type:none;
@@ -670,7 +742,26 @@ grid-auto-row:5;
 .nnc,.jspht{
 text-align:center;
 }
-
+.send{
+  background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFDC80;
+  width:100px;
+  border-radius:15px;
+  font-size: 20px;
+  width:150px;
+}
+.cancel{
+  background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFDC80;
+  width:100px;
+  border-radius:15px;
+  font-size: 20px;
+  width:150px;
+}
 .desk{
   display:none;
   }
@@ -688,6 +779,9 @@ border-radius:150px;
 
 .db{
 text-align:center
+}
+label{
+  font-size: 20px;
 }
 
 input{
