@@ -369,6 +369,9 @@ margin-bottom:15px;
   margin-top:50px;
   text-align: justify;
   }
+  .container p{
+    font-size: 1.5em;
+  }
   .content{
     display:grid;
     grid-template-columns: repeat(2,1fr);
