@@ -13,7 +13,7 @@
 @media only screen and (min-width:1367px){
 
 body{
-  background: url("../img/fondo.png") no-repeat center center/cover;
+  background: radial-gradient(black, red) /*url("../img/fondo.png") no-repeat center center/cover*/;
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -334,7 +334,11 @@ text-align:center;
 /*Laptops*/
 @media only screen and (min-width:851px) and (max-width:1366px){
   body{
+<<<<<<< HEAD
   background: radial-gradient(red, black,red)/*url("../img/fondo.png") no-repeat center center/cover*/;
+=======
+  background: radial-gradient(red, black)/*url("../img/fondo.png") no-repeat center center/cover¨*/;
+>>>>>>> branch 'main' of https://github.com/Brandon-Moreno/LogisticaGA.git
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -419,7 +423,7 @@ text-align:center;
   width:75%;
   margin:auto;
   color:#ffffff;
-  background-color: rgba(250,250,250,.1);
+  background-color: rgba(0, 0, 0, .3)/*rgba(250,250,250,.1)*/;
   padding:50px 50px;
   margin-bottom:50px;
   margin-top:50px;
@@ -442,7 +446,7 @@ text-align:center;
     width:75%;
     margin:auto;
     color:#ffffff;
-    background-color: rgba(250,250,250,.1);
+    background-color: rgba(0, 0, 0, .3)/*rgba(250,250,250,.1)*/;
     padding:50px 50px;
     margin-bottom:50px;
     margin-top:50px;
@@ -450,12 +454,13 @@ text-align:center;
     grid-template-columns: repeat(1,1fr);
     gap:80px 30px;
     text-align: center;
+    border-radius: 30px;
   }
   .containerAU{
     width:75%;
     margin:auto;
     color:#ffffff;
-    background-color: rgba(250,250,250,.1);
+    background-color:rgb(0,0,0, .3) /*rgba(250,250,250,.1)*/;
     padding:50px 50px;
     margin-bottom:50px;
     margin-top:50px;
