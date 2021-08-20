@@ -177,7 +177,7 @@ body{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     grid-auto-rows:3;
-grid-gap:80px;
+    gap:100px;
   }
   .lgstTeam img{
     width:180px;
@@ -334,7 +334,7 @@ text-align:center;
 /*Laptops*/
 @media only screen and (min-width:851px) and (max-width:1366px){
   body{
-  background: url("../img/fondo.png") no-repeat center center/cover;
+  background: radial-gradient(red, black,red)/*url("../img/fondo.png") no-repeat center center/cover*/;
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -349,13 +349,14 @@ text-align:center;
   text-decoration:none;
   color:white;
   }
-  .active{
+ .active{
   border-bottom: 3px solid #4267B2;
   }
-  .navigation a:hover{
+  .iz a:hover{
   border-bottom: 3px solid #2867B2;
   }
-  .logo{
+  .logo a{
+  grid-column:1/2;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -447,7 +448,7 @@ text-align:center;
     margin-top:50px;
     display:grid;
     grid-template-columns: repeat(1,1fr);
-    grid-gap:50px;
+    gap:80px 30px;
     text-align: center;
   }
   .containerAU{
@@ -715,7 +716,7 @@ text-align:center;
 @media only screen and (max-width:850px){
 
 body{
-background: url("../img/fondo.png") no-repeat center center/cover;
+background: radial-gradient(red,black) /*url("../img/fondo.png") no-repeat center center/cover*/;
 color:#ffffff;
 font-family: "Times New Normal Regular";
 }
