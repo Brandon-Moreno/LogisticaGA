@@ -882,6 +882,18 @@ text-decoration:none;
 font-size:30px;
 color: #ffffff;
 }
+.fa-globe-americas{
+color: #2ECC71
+}
+.fa-lock{
+color:#F5B041;
+}
+.fa-boxes{
+color:#B9770E;
+}
+.fa-dolly{
+color:#34495E;
+}
 .containerContact{
   padding:10px;
   width:100%;
