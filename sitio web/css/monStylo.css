@@ -435,7 +435,7 @@ margin-bottom:50px;
 margin-top:50px;
 text-align: justify;
 }
-.container p{
+.container p, span{
   font-size: 20px;
 }
 .container i{
