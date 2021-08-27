@@ -17,7 +17,7 @@ body{
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
-
+ /*Header desk*/
   .navigation{
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -46,6 +46,28 @@ body{
   font-size:20px;
   padding:10px;
   }
+  .contact{
+  display:flex;
+  justify-content:center;
+  }
+  .clients{
+  display:flex;
+  justify-content:center;
+  }
+  .galery{
+  display:flex;
+  justify-content:center;
+  }
+  .whoWeAre{
+  display:flex;
+  justify-content:center;
+  }
+  .service{
+  display:flex;
+  justify-content:center;
+  }
+
+  /*end header*/
   hr{
     border:1px solid #ffffff;
   }
@@ -70,50 +92,9 @@ body{
     background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
     animation:prsnttn 30s 4;
   }
-  .contact{
-  display:flex;
-  justify-content:center;
-  }
-  .clients{
-  display:flex;
-  justify-content:center;
-  }
-  .galery{
-  display:flex;
-  justify-content:center;
-  }
-  .whoWeAre{
-  display:flex;
-  justify-content:center;
-  }
-  .service{
-  display:flex;
-  justify-content:center;
-  }
+  /*Container desk*/
 
-  /*----content-----*/
-
-  .container{
-  width:75%;
-  margin:auto;
-  color:#ffffff;
-  background-color: rgba(250,250,250,.1);
-  padding:50px 50px;
-  margin-bottom:50px;
-  margin-top:50px;
-  text-align: justify;
-  }
-  .content{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows:8;
-    grid-gap:20px;
-  }
-
-  .container i{
-    color: #4AC959;
-  }
-  .containerContact{
+    .container{
     width:75%;
     margin:auto;
     color:#ffffff;
@@ -121,33 +102,59 @@ body{
     padding:50px 50px;
     margin-bottom:50px;
     margin-top:50px;
+    text-align: justify;
+    }
+    .container i{
+      color: #4AC959;
+    }
+    .containerContact{
+      width:75%;
+      margin:auto;
+      color:#ffffff;
+      background-color: rgba(250,250,250,.1);
+      padding:50px 50px;
+      margin-bottom:50px;
+      margin-top:50px;
+      display:grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap:50px;
+      text-align: center;
+    }
+    .container h3{
+      text-align: center;
+    }
+    .container img{
+      width:100%;
+    }
+  /*----content desk-----*/
+
+  .content{
     display:grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap:50px;
-    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows:8;
+    grid-gap:20px;
   }
+
   .content p{
   font-size:20px;
   }
-  .container h3{
-    text-align: center;
-  }
-  .container img{
-    width:100%;
-  }
+
   .mobile{
   display: none;
   }
   .putOn{
-    width:50px;
+    width:100px;
     position: relative;
     bottom:150px;
     left:255px;
+    border-radius: 10px;
   }
-  .putOn a{
+  .cover a{
     text-decoration: none;
     color: #000000;
     font-size:30px;
+    background: rgba(231, 76, 60, .8);
+    border-radius:10px;
   }
   .road{
     position:relative;
@@ -229,7 +236,7 @@ label{
   }
 
 
-/*-----footer lap-----*/
+/*-----footer desk-----*/
   footer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -334,15 +341,12 @@ text-align:center;
 /*Laptops*/
 @media only screen and (min-width:851px) and (max-width:1366px){
   body{
-<<<<<<< HEAD
   background: radial-gradient(red, black,red)/*url("../img/fondo.png") no-repeat center center/cover*/;
-=======
   background: radial-gradient(red, black)/*url("../img/fondo.png") no-repeat center center/cover¨*/;
->>>>>>> branch 'main' of https://github.com/Brandon-Moreno/LogisticaGA.git
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
-
+/*header laptops*/
   .navigation{
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -372,6 +376,29 @@ text-align:center;
   font-size:20px;
   padding:10px;
   }
+
+  .contact{
+  display:flex;
+  justify-content:center;
+  }
+  .clients{
+  display:flex;
+  justify-content:center;
+  }
+  .galery{
+  display:flex;
+  justify-content:center;
+  }
+  .whoWeAre{
+  display:flex;
+  justify-content:center;
+  }
+  .service{
+  display:flex;
+  justify-content:center;
+  }
+
+  /*end Header*/
   hr{
     border:1px solid #ffffff;
   }
@@ -396,30 +423,25 @@ text-align:center;
     background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
     animation:prsnttn 30s 4;
   }
-  .contact{
-  display:flex;
-  justify-content:center;
-  }
-  .clients{
-  display:flex;
-  justify-content:center;
-  }
-  .galery{
-  display:flex;
-  justify-content:center;
-  }
-  .whoWeAre{
-  display:flex;
-  justify-content:center;
-  }
-  .service{
-  display:flex;
-  justify-content:center;
-  }
+/*Container laptops*/
 
-  /*----content-----*/
-
-  .container{
+.container{
+width:100%;
+margin:auto;
+color:#000000;
+background-color: rgba(250, 250, 250, .9)/*rgba(250,250,250,.1)*/;
+padding:50px 50px;
+margin-bottom:50px;
+margin-top:50px;
+text-align: justify;
+}
+.container p{
+  font-size: 20px;
+}
+.container i{
+  color: #4AC959;
+}
+.containerContact{
   width:75%;
   margin:auto;
   color:#ffffff;
@@ -427,123 +449,82 @@ text-align:center;
   padding:50px 50px;
   margin-bottom:50px;
   margin-top:50px;
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  gap:80px 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+.containerAU{
+  width:75%;
+  margin:auto;
+  color:#ffffff;
+  background-color:rgb(0,0,0, .3) /*rgba(250,250,250,.1)*/;
+  padding:50px 50px;
+  margin-bottom:50px;
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 30px;
   text-align: justify;
   }
-  .container p{
-    font-size: 20px;
-  }
-  .content{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows:8;
-    grid-gap:20px;
-  }
 
-  .container i{
-    color: #4AC959;
-  }
-  .containerContact{
-    width:75%;
-    margin:auto;
-    color:#ffffff;
-    background-color: rgba(0, 0, 0, .3)/*rgba(250,250,250,.1)*/;
-    padding:50px 50px;
-    margin-bottom:50px;
-    margin-top:50px;
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-    gap:80px 30px;
-    text-align: center;
-    border-radius: 30px;
-  }
-  .containerAU{
-    width:75%;
-    margin:auto;
-    color:#ffffff;
-    background-color:rgb(0,0,0, .3) /*rgba(250,250,250,.1)*/;
-    padding:50px 50px;
-    margin-bottom:50px;
-    margin-top:50px;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-auto-rows: minmax(200px, auto);
-    grid-gap: 30px;
-    text-align: justify;
-    }
-    .vlrs{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      grid-gap:30px;
-      text-align: center;
-    }
-    .lstrtv1,.lstrtv2,.lstrtv3,.lstrtv4{
-      display:flex;
-      align-items: center;
-      justify-content:center;
-      font-size:200px;
-    }
-    .fa-users{
-      background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #FFDC80;
-    }
-    .fa-medal{
-      background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #FFDC80;
-    }
-    .fa-award{
-      background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #FFDC80;
-    }
-    .fa-star{
-      background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #FFDC80;
-    }
-    h1, h2{
-      text-align: center;
-    }
-    .containerAU p{
-      font-size:20px;
-    }
-  .content p{
-  font-size:20px;
+  .containerAU p{
+    font-size:20px;
   }
   .container h3{
     text-align: center;
   }
   .container img{
     width:100%;
+    border-radius:10px;
   }
+  /*----content laptops-----*/
+    /*Coontent index*/
+  .content{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows:minmax(200px, auto);
+  grid-gap:20px;
+  }
+  .content p{
+  font-size:20px;
+  }
+
   .mobile{
   display: none;
   }
   .putOn{
-    width:50px;
+    width:200px;
+    height:60px;
+    text-align: center;
     position: relative;
-    bottom:150px;
-    left:255px;
+    bottom:65px;
+    left:245px;
+    background: rgba(231, 76, 60, .8);
+    border-radius:10px;
   }
   .putOn a{
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size:30px;
+
   }
   .road{
     position:relative;
+    width:250px;
+    height:60px;
     bottom:140px;
+
     text-align: center;
+    background: rgba(88, 214, 141, .8);
+    border-right:10px;
   }
   .road a{
     text-decoration: none;
-    color: #000000;
-    font-size:36px;
+    color: #ffffff;
+    font-size:30px;
   }
   ul li{
   list-style:none;
@@ -559,6 +540,13 @@ text-align:center;
   .listService .quote{
     font-size:18px;
   }
+
+  .unidades img{
+    width: 250px;
+    border-radius:80px !important;
+  }
+  /*end contn index*/
+  /*Content Contacto*/
   .lgstTeam{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -612,7 +600,47 @@ label{
     font-size: 20px;
     width:150px;
   }
-
+  /*end content contácto*/
+/*Content Quienes somos?*/
+.vlrs{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+grid-gap:30px;
+text-align: center;
+}
+.lstrtv1,.lstrtv2,.lstrtv3,.lstrtv4{
+display:flex;
+align-items: center;
+justify-content:center;
+font-size:200px;
+}
+.fa-users{
+background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #FFDC80;
+}
+.fa-medal{
+background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #FFDC80;
+}
+.fa-award{
+background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #FFDC80;
+}
+.fa-star{
+background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #FFDC80;
+}
+h1, h2{
+text-align: center;
+}
 
 /*-----footer lap-----*/
   footer{
@@ -878,8 +906,8 @@ border-radius:10px;
 list-style-type:none;
 }
 .listService{
-grid-template-column:repeat(2,1fr);
-grid-auto-row:5;
+grid-template-columns:repeat(2,1fr);
+grid-auto-rows:5;
 }
 .lgstTeam{
   margin-top:50px;
