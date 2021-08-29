@@ -450,9 +450,11 @@ margin:auto;
 color:#000000;
 background-color: rgba(250, 250, 250, .9)/*rgba(250,250,250,.1)*/;
 padding:50px 50px;
-margin-bottom:50px;
-margin-top:50px;
 text-align: justify;
+display:grid;
+grid-template-columns: repeat(2,1fr);
+grid-auto-rows:minmax(200px, auto);
+gap:40px;
 }
 .container p, span{
   font-size: 20px;
@@ -500,17 +502,7 @@ text-align: justify;
     width:100%;
     border-radius:10px;
   }
-  /*----content laptops-----*/
-    /*Coontent index*/
-  .content{
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows:minmax(200px, auto);
-  grid-gap:20px;
-  }
-  .unidades{
-    grid-column: 1;
-  }
+
   .content p{
   font-size:20px;
   }
@@ -556,25 +548,31 @@ text-align: justify;
   ul p{
     font-size: 20px;
   }
-  .listService ul{
+  .listService ul {
   text-align:center;
   }
-
+  .listService ul p{
+    text-align:justify;
+  }
   .listService .quote{
     font-size:18px;
   }
 
-  .unidades img{
+  .unities img{
     width: 200px;
     border-radius:80px !important;
   }
-  .unidades .quote{
+  .unities .quote{
     text-align: center;
+  }
+  .medidas a{
+    color:#000000;
+    text-decoration: none;
   }
   .u1{
     background: rgba(0,0,0, .4);
     width:200px;
-    height:300px;
+    height:280px;
     border-radius:80px;
     text-align: center;
     color:#ffffff;
@@ -582,7 +580,7 @@ text-align: justify;
   .u1 span{
     font-size:12px !important;
   }
-  /*end contn index*/
+  /*end content index*/
   /*Content Contacto*/
   .lgstTeam{
     display:grid;
