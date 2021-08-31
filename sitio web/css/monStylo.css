@@ -150,7 +150,21 @@ gap:40px;
   grid-template-rows:auto;
   gap:50px;
 }
-
+.containerPolitics, .containerTerms{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  width:70%;
+  margin:auto;
+  color:#000000;
+  background-color:rgba(250, 250, 250, .9)/*rgba(250,250,250,.1)*/;
+  padding:50px 50px;
+  margin-bottom:50px;
+  margin-top:50px;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 30px;
+  text-align: justify;
+  font-size: 24px;
+}
 .galeryContainer h1{
   display: flex;
   justify-content: center;
@@ -379,7 +393,7 @@ h1, h2{
 text-align: center;
 }
 
-/*-----footer lap-----*/
+/*-----footer desk-----*/
   footer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -621,7 +635,21 @@ gap:40px;
   grid-template-rows:auto;
   gap:50px;
 }
-
+.containerPolitics, .containerTerms{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  width:70%;
+  margin:auto;
+  color:#000000;
+  background-color:rgba(250, 250, 250, .9)/*rgba(250,250,250,.1)*/;
+  padding:50px 50px;
+  margin-bottom:50px;
+  margin-top:50px;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 30px;
+  text-align: justify;
+  font-size: 24px;
+}
 .galeryContainer h1{
   display: flex;
   justify-content: center;
@@ -1078,9 +1106,27 @@ color:#34495E;
 }
 .galeryContainer{
 background: rgba(250, 250, 250, .8);
+display: grid;
+grid-auto-columns: repeat(1,1fr);
+gap:50px;
+}
+.containerPolitics, .containerTerms{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  margin:auto;
+  color:#000000;
+  background-color:rgba(250, 250, 250, .9)/*rgba(250,250,250,.1)*/;
+  padding:50px 50px;
+  margin-bottom:50px;
+  margin-top:50px;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 30px;
+  text-align: justify;
+  font-size: 24px;
 }
 .galeryContainer img{
-width:50%;
+width:100%;
+margin: auto;
 }
 .galeryContainer h1{
   display: flex;
