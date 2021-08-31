@@ -18,7 +18,7 @@
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
-/*header desk*/
+/*header laptops*/
   .navigation{
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -95,7 +95,7 @@
     background: url("../img/imagotipoWhite.png") no-repeat center center/cover;
     animation:prsnttn 30s 4;
   }
-/*Container desk*/
+/*Container laptops*/
 
 .container{
 width:100%;
@@ -192,10 +192,10 @@ gap:40px;
   .galeryContainer img{
   width:100%;
   }
-
   .containerAU p{
-    font-size:20px;
+    font-size:20px !important;
   }
+
   .container h3{
     text-align: center;
   }
@@ -309,30 +309,30 @@ label{
     width:300px;
   }
   input:focus{
-  border-bottom:1px solid #4AC959;
+  border-bottom:5px solid #4AC959;
   background-color: rgba(0,0,0,.1);
   outline:none;
+  color:#000000;
   }
-
   .send{
     background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #FFDC80;
-    width:100px;
     border-radius:15px;
     font-size: 20px;
     width:150px;
   }
   .send:hover{
-    background-color:rgba(0,0,0,.7);
+    background-color:black;
+    width:150px;
+    border-radius:15px;
   }
   .cancel{
     background: -webkit-linear-gradient(#E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #FFDC80;
-    width:100px;
     border-radius:15px;
     font-size: 20px;
     width:150px;
@@ -379,7 +379,7 @@ h1, h2{
 text-align: center;
 }
 
-/*-----footer desk-----*/
+/*-----footer lap-----*/
   footer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
