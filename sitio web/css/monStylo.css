@@ -100,7 +100,7 @@
     animation:prsnttn 30s infinite;
 
   }
-/*Container desk*/
+/*Container laptops*/
 
 .container{
 width:100%;
@@ -139,10 +139,26 @@ gap:80px;
   width:200px;
   height:60px;
   text-align: center;
-  position: relative;
+  /*position: relative;
   bottom:65px;
-  left:245px;
+  left:245px;*/
   background: rgba(231, 76, 60, .8);
+  border-radius:10px;
+}
+.intro span{
+  grid-column: 2/3;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+
+}
+.marketing{
+  width:100%;
+  height:250px;
+  display:flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  background: url("../img/covertura.jpg") no-repeat center/cover;
   border-radius:10px;
 }
 .putOn a{
@@ -156,11 +172,27 @@ gap:80px;
   grid-template-columns: repeat(2,1fr);
   gap: 40px;
 }
+.services span{
+  grid-column: 1/2;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+}
+.ttr{
+  width:100%;
+  height:250px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  background:url("../img/logi.jpg") no-repeat center/cover;
+  border-radius:10px;
+}
 .road{
-  position:relative;
+  /*position:relative;
+  bottom:140px;*/
+
   width:250px;
   height:60px;
-  bottom:140px;
   text-align: center;
   background: rgba(88, 214, 141, .8);
   border-right:10px;
@@ -442,7 +474,7 @@ text-align: center;
 }
 
 
-/*-----footer desk-----*/
+/*-----footer lap-----*/
   footer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -673,10 +705,26 @@ gap:80px;
   width:200px;
   height:60px;
   text-align: center;
-  position: relative;
+  /*position: relative;
   bottom:65px;
-  left:245px;
+  left:245px;*/
   background: rgba(231, 76, 60, .8);
+  border-radius:10px;
+}
+.intro span{
+  grid-column: 2/3;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+
+}
+.marketing{
+  width:100%;
+  height:250px;
+  display:flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  background: url("../img/covertura.jpg") no-repeat center/cover;
   border-radius:10px;
 }
 .putOn a{
@@ -690,11 +738,27 @@ gap:80px;
   grid-template-columns: repeat(2,1fr);
   gap: 40px;
 }
+.services span{
+  grid-column: 1/2;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+}
+.ttr{
+  width:100%;
+  height:250px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  background:url("../img/logi.jpg") no-repeat center/cover;
+  border-radius:10px;
+}
 .road{
-  position:relative;
+  /*position:relative;
+  bottom:140px;*/
+
   width:250px;
   height:60px;
-  bottom:140px;
   text-align: center;
   background: rgba(88, 214, 141, .8);
   border-right:10px;
@@ -1196,16 +1260,16 @@ color:#34495E;
 }
 .putOn{
 width:170px;
-position:relative;
+/*position:relative;
 bottom:71px;
-left:235px;
+left:235px;*/
 background: rgba(231, 76, 60, .8);
 border-radius:10px;
 }
 .road{
   width:200px;
-  position:relative;
-  bottom:200px;
+  /*position:relative;
+  bottom:200px;*/
   background: rgba(88, 214, 141, .8);
   border-right:10px;
 }
@@ -1216,12 +1280,35 @@ list-style-type:none;
 grid-template-columns:repeat(2,1fr);
 grid-auto-rows:5;
 }
-
+.intro span{
+  padding-top: 20px;
+}
+.marketing{
+  width:100%;
+  height:200px;
+  display:flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  background: url("../img/covertura.jpg") no-repeat center/cover;
+  border-radius:10px;
+}
+.ttr{
+  width:100%;
+  height:200px;
+  display:flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background:url("../img/logi.jpg") no-repeat center/cover;
+  border-radius:10px;
+}
 .medidas a{
   color:#000000;
   text-decoration: none;
 }
 
+.mobile{
+font-size:50px;
+}
 /*end index container*/
 /*start Contac- container*/
 .containerContact{
@@ -1373,9 +1460,7 @@ margin: auto;
   .content i{
   text-align:center;
   }
-  .mobile{
-  font-size:80px;
-  }
+
 
 /*politcs & terms*/
 .containerPolitics, .containerTerms{
