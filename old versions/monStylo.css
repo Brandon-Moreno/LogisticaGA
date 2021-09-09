@@ -13,7 +13,8 @@
 @media only screen and (min-width:1367px){
 
   body{
-  background: #ffffff/*radial-gradient(red, black,red)url("../img/fondo.png") no-repeat center center/cover*/;
+  background: radial-gradient(red, black,red)/*url("../img/fondo.png") no-repeat center center/cover*/;
+  background: radial-gradient(red, black)/*url("../img/fondo.png") no-repeat center center/cover¨*/;
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -30,7 +31,7 @@
 
   .navigation, .navigation a{
   text-decoration:none;
-  color:#000000;
+  color:white;
   }
  .active{
   border-bottom: 3px solid #4267B2;
@@ -75,7 +76,7 @@
 
   /*end Header*/
   hr{
-    border:1px solid rgba(250, 250, 250, .9);
+    border:1px solid #ffffff;
   }
 
   @keyframes prsnttn{
@@ -99,7 +100,7 @@
     animation:prsnttn 30s infinite;
 
   }
-/*Container laptops*/
+/*Container desk*/
 
 .container{
 width:100%;
@@ -138,26 +139,10 @@ gap:80px;
   width:200px;
   height:60px;
   text-align: center;
-  /*position: relative;
+  position: relative;
   bottom:65px;
-  left:245px;*/
+  left:245px;
   background: rgba(231, 76, 60, .8);
-  border-radius:10px;
-}
-.intro span{
-  grid-column: 2/3;
-  display:flex;
-  align-items:flex-start;
-  justify-content: center;
-
-}
-.marketing{
-  width:100%;
-  height:250px;
-  display:flex;
-  align-items:flex-end;
-  justify-content: flex-end;
-  background: url("../img/covertura.jpg") no-repeat center/cover;
   border-radius:10px;
 }
 .putOn a{
@@ -171,24 +156,11 @@ gap:80px;
   grid-template-columns: repeat(2,1fr);
   gap: 40px;
 }
-.services span{
-  grid-column: 1/2;
-  display:flex;
-  align-items:flex-start;
-  justify-content: center;
-}
-.ttr{
-  width:100%;
-  height:250px;
-  display:flex;
-  align-items: center;
-  justify-content: flex-start;
-  background:url("../img/logi.jpg") no-repeat center/cover;
-  border-radius:10px;
-}
 .road{
+  position:relative;
   width:250px;
   height:60px;
+  bottom:140px;
   text-align: center;
   background: rgba(88, 214, 141, .8);
   border-right:10px;
@@ -283,100 +255,7 @@ text-align:center;
     text-align: center;
     border-radius: 30px;
   }
-  .containerContact hr{
-    border: 1px solid #ffffff !important;
-  }
-  .ok{
-    text-align:center;
-    width: 100%;
-    padding:12px;
-    background-color:#4e8;
-    color:#fff;
-  }
-  .bad{
-    text-align: center;
-    width:100%;
-    padding:12px;
-    background-color:#a22;
-    color:#fff;
-  }
-  .contactUs{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-  }
-  .contactUs a{
-    color:#000000;
-  }
-.whats{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
 
-.whats .fa-whatsapp{
-  color:#000000 !important;
-  font-size:130px !important;
-}
-.whats .fa-whatsapp:hover{
-color:#4AC959 !important;
-font-size:170px !important;
-}
-.face{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.face .fa-facebook{
-  font-size:125px;
-}
-.face .fa-facebook:hover{
-color:#4267B2 ;
-font-size:170px;
-}
-.ourContact{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.fa-envelope-open-text{
-  font-size:120px;
-}
-.fa-envelope-open-text:hover{
-color:#51B5EA;
-font-size:170px;
-}
-.insta{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.insta .fa-instagram{
-  font-size:120px;
-}
-.insta .fa-instagram:hover{
-  background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #FFDC80;
-font-size:170px;
-}
-.linked{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.linked .fa-linkedin{
-  font-size:120px;
-}
-.linked .fa-linkedin:hover{
-color:#2867B2 ;
-font-size:170px;
-}
   .lgstTeam{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -408,16 +287,6 @@ label{
   }
   input:focus{
   border-bottom:5px solid #4AC959;
-  background-color: rgba(0,0,0,.1);
-  outline:none;
-  color:#000000;
-  }
-  textarea{
-    width:50%;
-    height:200px;
-  }
-  textarea:focus{
-  border:5px solid #4AC959;
   background-color: rgba(0,0,0,.1);
   outline:none;
   color:#000000;
@@ -573,19 +442,18 @@ text-align: center;
 }
 
 
-/*-----footer lap-----*/
+/*-----footer desk-----*/
   footer{
   display:grid;
   grid-template-columns: repeat(3,1fr);
   grid-auto-rows:minmax(100px,auto);
   font-size:1em;
-  color:#000000;
+  color:#ffffff;
   height:200px;
   }
   footer a{
   text-decoration:none;
-  color:#000000;
-  font-size: 1.3em;
+  color:#ffffff;
   }
   .we{
   display:flex;
@@ -623,16 +491,16 @@ font-size:16px;
 text-align:center;
 }
 
-  .fa-facebook:hover{
+  .face a:hover{
   color: #4267B2;
-}
-  .fc{
+  }
+  .face{
   display:flex;
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
   }
-  .fa-instagram:hover{
+  .ins a:hover{
   background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -644,7 +512,7 @@ text-align:center;
   align-items:center;
   margin-bottom:15px;
   }
-  .fa-linkedin:hover{
+  .link a:hover{
   color:#2867B2;
   }
   .link{
@@ -654,7 +522,7 @@ text-align:center;
   margin-bottom:15px;
   }
 
-  .fa-youtube:hover{
+  .youtube a:hover{
   color:#FF0000;
   }
   .youtube{
@@ -679,7 +547,8 @@ text-align:center;
 /*Laptops*/
 @media only screen and (min-width:851px) and (max-width:1366px){
   body{
-  background: #ffffff/*radial-gradient(red, black,red)url("../img/fondo.png") no-repeat center center/cover*/;
+  background: radial-gradient(red, black,red)/*url("../img/fondo.png") no-repeat center center/cover*/;
+  background: radial-gradient(red, black)/*url("../img/fondo.png") no-repeat center center/cover¨*/;
   color:#ffffff;
   font-family: "Times New Normal Regular";
   }
@@ -696,7 +565,7 @@ text-align:center;
 
   .navigation, .navigation a{
   text-decoration:none;
-  color:#000000;
+  color:white;
   }
  .active{
   border-bottom: 3px solid #4267B2;
@@ -741,7 +610,7 @@ text-align:center;
 
   /*end Header*/
   hr{
-    border:1px solid rgba(250, 250, 250, .9);
+    border:1px solid #ffffff;
   }
 
   @keyframes prsnttn{
@@ -804,26 +673,10 @@ gap:80px;
   width:200px;
   height:60px;
   text-align: center;
-  /*position: relative;
+  position: relative;
   bottom:65px;
-  left:245px;*/
+  left:245px;
   background: rgba(231, 76, 60, .8);
-  border-radius:10px;
-}
-.intro span{
-  grid-column: 2/3;
-  display:flex;
-  align-items:flex-start;
-  justify-content: center;
-
-}
-.marketing{
-  width:100%;
-  height:250px;
-  display:flex;
-  align-items:flex-end;
-  justify-content: flex-end;
-  background: url("../img/covertura.jpg") no-repeat center/cover;
   border-radius:10px;
 }
 .putOn a{
@@ -837,24 +690,11 @@ gap:80px;
   grid-template-columns: repeat(2,1fr);
   gap: 40px;
 }
-.services span{
-  grid-column: 1/2;
-  display:flex;
-  align-items:flex-start;
-  justify-content: center;
-}
-.ttr{
-  width:100%;
-  height:250px;
-  display:flex;
-  align-items: center;
-  justify-content: flex-start;
-  background:url("../img/logi.jpg") no-repeat center/cover;
-  border-radius:10px;
-}
 .road{
+  position:relative;
   width:250px;
   height:60px;
+  bottom:140px;
   text-align: center;
   background: rgba(88, 214, 141, .8);
   border-right:10px;
@@ -949,100 +789,7 @@ text-align:center;
     text-align: center;
     border-radius: 30px;
   }
-  .containerContact hr{
-    border: 1px solid #ffffff !important;
-  }
-  .ok{
-    text-align:center;
-    width: 100%;
-    padding:12px;
-    background-color:#4e8;
-    color:#fff;
-  }
-  .bad{
-    text-align: center;
-    width:100%;
-    padding:12px;
-    background-color:#a22;
-    color:#fff;
-  }
-  .contactUs{
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-  }
-  .contactUs a{
-    color:#000000;
-  }
-.whats{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
 
-.whats .fa-whatsapp{
-  color:#000000 !important;
-  font-size:130px !important;
-}
-.whats .fa-whatsapp:hover{
-color:#4AC959 !important;
-font-size:170px !important;
-}
-.face{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.face .fa-facebook{
-  font-size:125px;
-}
-.face .fa-facebook:hover{
-color:#4267B2 ;
-font-size:170px;
-}
-.ourContact{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.fa-envelope-open-text{
-  font-size:120px;
-}
-.fa-envelope-open-text:hover{
-color:#51B5EA;
-font-size:170px;
-}
-.insta{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.insta .fa-instagram{
-  font-size:120px;
-}
-.insta .fa-instagram:hover{
-  background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #FFDC80;
-font-size:170px;
-}
-.linked{
-height:200px;
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.linked .fa-linkedin{
-  font-size:120px;
-}
-.linked .fa-linkedin:hover{
-color:#2867B2 ;
-font-size:170px;
-}
   .lgstTeam{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -1074,16 +821,6 @@ label{
   }
   input:focus{
   border-bottom:5px solid #4AC959;
-  background-color: rgba(0,0,0,.1);
-  outline:none;
-  color:#000000;
-  }
-  textarea{
-    width:50%;
-    height:200px;
-  }
-  textarea:focus{
-  border:5px solid #4AC959;
   background-color: rgba(0,0,0,.1);
   outline:none;
   color:#000000;
@@ -1245,13 +982,12 @@ text-align: center;
   grid-template-columns: repeat(3,1fr);
   grid-auto-rows:minmax(100px,auto);
   font-size:1em;
-  color:#000000;
+  color:#ffffff;
   height:200px;
   }
   footer a{
   text-decoration:none;
-  color:#000000;
-  font-size: 1.3em;
+  color:#ffffff;
   }
   .we{
   display:flex;
@@ -1289,16 +1025,16 @@ font-size:16px;
 text-align:center;
 }
 
-  .fa-facebook:hover{
+  .face a:hover{
   color: #4267B2;
-}
-  .fc{
+  }
+  .face{
   display:flex;
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
   }
-  .fa-instagram:hover{
+  .ins a:hover{
   background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D, #F56040,#F77737,#FCAF45);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1310,7 +1046,7 @@ text-align:center;
   align-items:center;
   margin-bottom:15px;
   }
-  .fa-linkedin:hover{
+  .link a:hover{
   color:#2867B2;
   }
   .link{
@@ -1320,7 +1056,7 @@ text-align:center;
   margin-bottom:15px;
   }
 
-  .fa-youtube:hover{
+  .youtube a:hover{
   color:#FF0000;
   }
   .youtube{
@@ -1347,7 +1083,7 @@ text-align:center;
 @media only screen and (max-width:850px){
 
 body{
-background: #ffffff/*radial-gradient(red,black) url("../img/fondo.png") no-repeat center center/cover*/;
+background: radial-gradient(red,black) /*url("../img/fondo.png") no-repeat center center/cover*/;
 color:#ffffff;
 font-family: "Times New Normal Regular";
 }
@@ -1361,7 +1097,7 @@ grid-template-columns: repeat(1,1fr);
 grid-auto-rows: 2;
 }
 .navigation a{
-color: #000000;
+color: #ffffff;
 }
 .logo img{
 width:100%;
@@ -1399,7 +1135,7 @@ display:none;
 border-bottom: 3px solid #FF0000;
 }
 hr{
-border: 1px solid #EAEDED;
+border: 1px solid #ffffff;
 }
 /*ends Mobil Navigation*/
 @keyframes prsnttn{
@@ -1460,11 +1196,16 @@ color:#34495E;
 }
 .putOn{
 width:170px;
+position:relative;
+bottom:71px;
+left:235px;
 background: rgba(231, 76, 60, .8);
 border-radius:10px;
 }
 .road{
   width:200px;
+  position:relative;
+  bottom:200px;
   background: rgba(88, 214, 141, .8);
   border-right:10px;
 }
@@ -1475,35 +1216,12 @@ list-style-type:none;
 grid-template-columns:repeat(2,1fr);
 grid-auto-rows:5;
 }
-.intro span{
-  padding-top: 20px;
-}
-.marketing{
-  width:100%;
-  height:200px;
-  display:flex;
-  align-items:flex-end;
-  justify-content: flex-end;
-  background: url("../img/covertura.jpg") no-repeat center/cover;
-  border-radius:10px;
-}
-.ttr{
-  width:100%;
-  height:200px;
-  display:flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background:url("../img/logi.jpg") no-repeat center/cover;
-  border-radius:10px;
-}
+
 .medidas a{
   color:#000000;
   text-decoration: none;
 }
 
-.mobile{
-font-size:50px;
-}
 /*end index container*/
 /*start Contac- container*/
 .containerContact{
@@ -1521,73 +1239,6 @@ font-size:50px;
 text-decoration: none;
 color:#000000;
 }
-.containerContact hr{
-  border: 1px solid #ffffff !important;
-}
-.contactUs{
-  width:100%;
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(200px, auto);
-  font-size:90px;
-  gap:20px;
-}
-.fa-address-book{
-color:#FF5733;
-}
-
-.contactUs .fa-whatsapp{
-color:#4AC959;
-
-}
-.contactUs .fa-facebook{
-  color:#4267B2;
-}
-.whats{
-  border-radius: 150px;
-  background: #D2CECE;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:85%;
-  margin-left:30px;
-}
-.face{
-  border-radius: 150px;
-  background: #D2CECE;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:85%;
-
-}
-.ourContact{
-  border-radius: 150px;
-  background: #D2CECE;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:85%;
-  margin-left: 30px;
-}
-.insta{
-  border-radius: 150px;
-  background: #D2CECE;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:85%;
-
-}
-.linked{
-  border-radius: 150px;
-  background: #D2CECE;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:85%;
-  margin-left: 30px;
-}
 .lgstTeam{
   margin-top:50px;
   display:grid;
@@ -1596,10 +1247,6 @@ color:#4AC959;
 }
 .nnc,.jspht{
 text-align:center;
-}
-.lgstTeam img{
-width:50%;
-border-radius:150px;
 }
 .send{
   background: -webkit-linear-gradient( #5851DB,#833AB4,#C13584, #E1306C,#FD1D1D);
@@ -1621,6 +1268,11 @@ border-radius:150px;
   font-size: 20px;
   width:150px;
 }
+.lgstTeam img{
+width:50%;
+border-radius:150px;
+}
+
 .db{
 text-align:center
 }
@@ -1639,10 +1291,6 @@ input:focus{
 border-bottom:1px solid #4AC959;
 background-color: rgba(250, 250, 250,.1);
 outline:none;
-}
-textarea{
-  width:100%;
-  height:200px;
 }
 /*ends Conatct Container*/
 /*start galeryContainer*/
@@ -1725,7 +1373,9 @@ margin: auto;
   .content i{
   text-align:center;
   }
-
+  .mobile{
+  font-size:80px;
+  }
 
 /*politcs & terms*/
 .containerPolitics, .containerTerms{
@@ -1749,12 +1399,12 @@ footer{
   height:auto;
   display:grid;
   grid-template-columns:repeat(1,1fr);
-  grid-auto-rows:3;
+  grid-uto-rows:3;
   text-align:center;
   grid-gap:20px;
 }
 footer a{
-color:#000000;
+color:#ffffff;
 text-decoration:none;
 }
 .we{
@@ -1771,7 +1421,7 @@ grid-auto-rows: 2;
 grid-gap: 20px;
 font-size:2em;
 }
-.fc,
+.face,
 .ins,
 .link,
 .youtube{
@@ -1787,14 +1437,13 @@ display:flex;
 justify-content:center;
 align-items:center;
 margin-top:10px;
-color:#000000;
 }
 .wpp{
 position:fixed;
 bottom:30px;
 right:30px;
 }
-.socials .fa-facebook{
+.fa-facebook{
 color:#4267B2;
 }
 .fa-instagram{
@@ -1809,7 +1458,7 @@ color:#2867B2;
 .fa-youtube{
 color:#FF0000;
 }
-footer .fa-whatsapp{
+.fa-whatsapp{
 color:#4AC959;
 font-size:60px;
 }
